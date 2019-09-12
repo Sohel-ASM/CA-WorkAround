@@ -42,3 +42,18 @@ export const getBenefits = function () {
 export const calculateBonus = function () {
     return .02 * Employee.salary;
 };
+
+export const reimbursementEligibility = function () {
+    let reimbursementCosts = {
+        health: 5000,
+        housing: 8000,
+        wellness: 6000,
+        gym: 12000
+    };
+    let totalBenefitsValue = 0;
+    let employeeBenefits = payGrades[getCadre()].benefits;
+    for (let i = 0; i < employeeBenefits.length; i++) {
+        totalBenefitsValue += reimbursementCosts[employeeBenefits[i]];
+    }
+    return totalBenefitsValue;
+};
