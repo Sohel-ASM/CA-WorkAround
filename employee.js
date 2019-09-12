@@ -30,3 +30,11 @@ export const getCadre = function () {
         return 'midLevel';
     } else return 'seniorLevel';
 };
+
+export const calculateTax = function () {
+    return payGrades[getCadre()].taxMultiplier * Employee.salary;
+};
+
+export const getBenefits = function () {
+    return payGrades[getCadre()].benefits.join(', ');
+};
