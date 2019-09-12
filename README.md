@@ -1,0 +1,1 @@
+WorkAround is a human resource program, based on employee salary data, it provides various information about an employee. Currently, this program returns the cadre/level of position of an employee, employee tax rates, employee benefits, and reimbursement amount for health, housing, or wellness benefits.
