@@ -57,3 +57,5 @@ export const reimbursementEligibility = function () {
     }
     return totalBenefitsValue;
 };
+
+export default Employee;
