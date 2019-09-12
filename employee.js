@@ -38,3 +38,7 @@ export const calculateTax = function () {
 export const getBenefits = function () {
     return payGrades[getCadre()].benefits.join(', ');
 };
+
+export const calculateBonus = function () {
+    return .02 * Employee.salary;
+};
