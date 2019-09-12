@@ -22,3 +22,11 @@ let payGrades = {
         maxSalary: 200000
     }
 };
+
+export const getCadre = function () {
+    if (Employee.salary >= payGrades.entryLevel.minSalary && Employee.salary <= payGrades.entryLevel.maxSalary) {
+        return 'entryLevel';
+    } else if (Employee.salary >= payGrades.midLevel.minSalary && Employee.salary <= payGrades.midLevel.maxSalary) {
+        return 'midLevel';
+    } else return 'seniorLevel';
+};
